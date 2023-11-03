@@ -1,0 +1,55 @@
+body {
+    background-image: url('coffee.png');
+    background-size: cover; /* Cover the entire viewport */
+    background-attachment: fixed; /* Fix the background image while scrolling */
+    background-repeat: no-repeat; /* Prevent repeating of the background image */
+}
+
+#container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0); /* This makes the container totally transparent */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0); /* This makes the form totally transparent */
+}
+
+label, input, textarea {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: transparent; /* This makes the form fields totally transparent */
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+}
